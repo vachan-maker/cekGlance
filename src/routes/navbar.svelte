@@ -3,7 +3,7 @@
   </script>
   <Navbar  >
     <NavBrand href="/">
-      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">CEK Updates</span>
+      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">CEK Glance</span>
     </NavBrand>
     <NavHamburger  />
     <NavUl >

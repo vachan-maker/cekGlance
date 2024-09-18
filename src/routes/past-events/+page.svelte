@@ -3,17 +3,5 @@
 
 </script>
 <div  class="space-y-4 flex flex-col gap-9">
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <Card href={"image.webp"}/>
 </div>

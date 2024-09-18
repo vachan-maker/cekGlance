@@ -1,1 +1,1 @@
-<h1>Browse Upcoming Events</h1>
+

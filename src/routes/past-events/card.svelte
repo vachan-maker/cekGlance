@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import { Card, Button, Toggle } from 'flowbite-svelte';
-	import { ArrowRightOutline } from 'flowbite-svelte-icons';
+	export let href:string = '';
 </script>
 
 <Card
 	class="m-auto"
-	img="https://lh5.googleusercontent.com/p/AF1QipN-neC8AguRYsGnYVjnj-T5tvHJBEoecZ6Fa_Qz=w400-h224-k-no"
+	img="{href}"
 >
 	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 		College Graduation Ceremony
