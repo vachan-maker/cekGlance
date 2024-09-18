@@ -8,7 +8,7 @@
     <NavHamburger  />
     <NavUl >
       <NavLi href="/">Next Up</NavLi>
-      <NavLi href="/about">Looking Back</NavLi>
+      <NavLi href="/past-events">Looking Back</NavLi>
       <NavLi href="/about">Updates</NavLi>
     </NavUl>
   </Navbar>  
