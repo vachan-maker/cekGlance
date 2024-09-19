@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { Card, Button, Toggle } from 'flowbite-svelte';
+
+	import { Badge } from 'flowbite-svelte';
+
 	export let href:string = '';
 	export let heading:String='';
 	export let text:String='';
@@ -14,4 +17,5 @@
 	</h5>
 	<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{text}
 	</p>
+	<Badge large>Default</Badge>
 </Card>
