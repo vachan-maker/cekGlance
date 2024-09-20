@@ -7,8 +7,8 @@
     </NavBrand>
     <NavHamburger  />
     <NavUl >
-      <NavLi href="/">Next Up</NavLi>
-      <NavLi href="/past-events">Looking Back</NavLi>
-      <NavLi href="/about">Updates</NavLi>
+      <NavLi href="/" data-sveltekit-preload-data="hover">Next Up</NavLi>
+      <NavLi href="/past-events" data-sveltekit-preload-data="hover">Looking Back</NavLi>
+      <NavLi href="/about" data-sveltekit-preload-data="hover">Updates</NavLi>
     </NavUl>
   </Navbar>  

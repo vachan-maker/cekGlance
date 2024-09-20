@@ -3,7 +3,7 @@
 
 	import { Badge } from 'flowbite-svelte';
 
-	export let href:string = '';
+	export let href:String = '';
 	export let heading:String='';
 	export let text:String='';
 
