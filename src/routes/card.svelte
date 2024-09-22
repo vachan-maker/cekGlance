@@ -24,8 +24,7 @@
 	{/if}
 	{#if link}
 	<br />
-	<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{text}
-	</p>
+	<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{text}</p>
 	<Button href={link}>
 		Register Now
 	  </Button>
