@@ -1,12 +1,9 @@
 <script>
-    import { Alert } from 'flowbite-svelte';
+  import { Heading } from 'flowbite-svelte';
   </script>
   
-  <div class="p-8">
-    <Alert>
-      <span class="font-medium">Info alert!</span>
-      Change a few things up and try submitting again.
-    </Alert>
+  <div class="p-20 bg-slate-100">
+    <Heading tag="h1">Browse what's happening at CEK</Heading>
   </div>
   
   
