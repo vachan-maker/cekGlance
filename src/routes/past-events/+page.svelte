@@ -1,5 +1,5 @@
 <script>
-	import Card from "./card.svelte";
+	import Card from '../card.svelte';
     export let data;
     const past_events= data.past_events;
 
