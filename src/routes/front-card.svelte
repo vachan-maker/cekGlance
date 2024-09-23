@@ -12,7 +12,7 @@
 </script>
 
 <Card
-	class="m-8 max-w-64 flex flex-wrap"
+	class="m-8 max-w-72"
 	img="{href}"
 >
 	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{heading}
