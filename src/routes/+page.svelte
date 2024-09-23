@@ -1,5 +1,6 @@
 <script>
   import { Heading, A} from 'flowbite-svelte';
+  import { AngleRightOutline} from 'flowbite-svelte-icons';
 	import FrontCard from './front-card.svelte';
   export let data;
   const new_events= data.new_events;
@@ -15,7 +16,7 @@
   <p></p>
   <div class="flex flex-wrap justify-center">
     {#each new_events as event}
-    <FrontCard href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags}/>
+    <FrontCard href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
     {/each}
   </div>
 <div class="p-12">

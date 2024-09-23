@@ -20,6 +20,7 @@
                 text={event.description}
                 tags={event.tags}
                 link={event.link}
+                date={event.date}
             />
         {/each}
     </div>
@@ -35,6 +36,7 @@
                 text={complete.description}
                 tags={complete.tags}
                 link={complete.link}
+                date={complete.date}
             />
         {/each}
     </div>
