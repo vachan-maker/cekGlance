@@ -26,7 +26,7 @@
 	{#if link}
 	<br />
 	<Button href={link}>
-		Register Now
+		Learn More
 	  </Button>
 	{/if}
 </Card>
