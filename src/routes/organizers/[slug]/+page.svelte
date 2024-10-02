@@ -1,7 +1,7 @@
 <script>
 	import { Heading } from "flowbite-svelte";
     export let data;
-    const {organizer} = data;
+    const organizer = data.organizer;
 </script>
 <div class="p-20 bg-slate-100">
     <Heading tag="h1">{organizer.name}</Heading>

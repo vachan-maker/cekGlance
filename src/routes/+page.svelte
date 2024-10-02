@@ -1,6 +1,5 @@
 <script>
   import { Heading, A} from 'flowbite-svelte';
-  import { AngleRightOutline} from 'flowbite-svelte-icons';
 	import FrontCard from './front-card.svelte';
   export let data;
   const new_events= data.new_events;
