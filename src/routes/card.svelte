@@ -14,7 +14,7 @@
 </script>
 
 <Card
-	class="m-auto"
+	class="m-auto max-w-xs"
 	img="{img}" href="{link}"
 >
 	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{heading}

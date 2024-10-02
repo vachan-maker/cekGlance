@@ -31,12 +31,11 @@
 	<TabItem class="w-full">
 		<span slot="title">Completed Events</span>
 		<Heading tag="h2" class="mb-4 text-center">Completed Events</Heading>
-		<div class="flex flex-col gap-9 space-y-4">
+		<div class="flex flex-row flex-wrap gap-4 justify-start align-baseline">
 			{#each completed_events as complete}
 				<Card
 					img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{complete.imagePath}"
 					heading={complete.title}
-					text={complete.description}
 					tags={complete.tags}
 					link="/event/{complete.identifier}"
 					date={complete.date}
