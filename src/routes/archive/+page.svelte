@@ -6,7 +6,7 @@
 	export let data;
 	const completed_events = data.completed_events;
 </script>
-<div class="p-10">
+<div class="p-4 lg:p-10">
 <Heading tag="h2" class="mb-4 text-center">Completed Events</Heading>
 		<div class="flex flex-row flex-wrap gap-4 justify-start align-baseline">
 			{#each completed_events as complete}

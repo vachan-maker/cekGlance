@@ -4,9 +4,10 @@
     export let data;
     const event= data.event[0];
 </script>
-<div class="flex flex-col items-center gap-2 p-8 bg-slate-100 lg:flex-row lg:items-start">
+<div class="container bg-slate-200">
+    <div class="flex flex-col items-center gap-2 p-8 lg:flex-row lg:items-start">
     <div class="flex m-7">
-        <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square"/>
+        <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md"/>
     </div>
     <div class="flex flex-col flex-1 mt-8 justify-center">
         <Heading tag="h1" class="mb-6">{event.title}</Heading>
@@ -44,4 +45,5 @@
             {/if}
           </Listgroup>
     </div>
+</div>
 </div>
