@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Card, Button, Toggle } from 'flowbite-svelte';
+	import { Card, Button} from 'flowbite-svelte';
 
 	import { Badge } from 'flowbite-svelte';
 	import { ClockSolid } from 'flowbite-svelte-icons';
@@ -25,7 +25,7 @@
 	  {/if}
 	{#if tags}
 	{#each tags as tag}
-	<Badge large>{tag}</Badge>
+	<Badge large href="/organizers/{tag}">{tag}</Badge>
 	{/each}
 	{/if}
 	<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{text}</p>
