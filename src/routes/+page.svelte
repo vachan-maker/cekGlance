@@ -15,7 +15,7 @@
   <p></p>
   <div class="flex flex-wrap justify-center">
     {#each new_events as event}
-    <FrontCard href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
+    <FrontCard href="/events/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
     {/each}
   </div>
 <div class="p-12">
@@ -24,7 +24,7 @@
 <p></p>
 <div class="flex flex-wrap justify-center">
   {#each past_events as past_event}
-  <FrontCard href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/{past_event.imagePath}" heading={past_event.title} tags={past_event.tags} text={past_event.description}/>
+  <FrontCard img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/{past_event.imagePath}" heading={past_event.title} tags={past_event.tags} text={past_event.description}/>
   {/each}
 </div> 
   

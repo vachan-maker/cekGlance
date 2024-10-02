@@ -4,15 +4,16 @@
 	import { Badge } from 'flowbite-svelte';
 	import { ClockSolid } from 'flowbite-svelte-icons';
 
-	export let href: string = '';
+	export let img: string = '';
 	export let heading: string = '';
 	export let text: string = '';
 	export let tags: string[];
 	export let link: string = '';
 	export let date: string = '';
+	export let href:string='';
 </script>
 
-<Card class="m-8 max-w-72" img={href}>
+<Card class="m-8 max-w-72" img={img} href={href}>
 	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{heading}</h5>
 	{#if date}
 		<Badge border>

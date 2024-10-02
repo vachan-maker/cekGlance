@@ -31,11 +31,11 @@
       <div class="flex flex-col gap-9 space-y-4">
         {#each completed_events as complete}
             <Card
-                href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{complete.imagePath}"
+                img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{complete.imagePath}"
                 heading={complete.title}
                 text={complete.description}
                 tags={complete.tags}
-                link={complete.link}
+                link="/events/{complete.identifier}"
                 date={complete.date}
             />
         {/each}
