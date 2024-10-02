@@ -10,6 +10,7 @@
     <NavHamburger  />
     <NavUl {activeUrl} >
       <NavLi href="/upcoming" data-sveltekit-preload-data="hover">Next Up</NavLi>
+      <NavLi href="/archive" data-sveltekit-preload-data="hover">Archive</NavLi>
       <NavLi href="/past-events" data-sveltekit-preload-data="hover">Looking Back</NavLi>
     </NavUl>
   </Navbar>  
