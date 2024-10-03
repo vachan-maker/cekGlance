@@ -20,7 +20,7 @@
     </div>
     <div class="flex flex-row overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
       {#each upcoming_events as upcoming}
-      <FrontCard href="/events/{upcoming.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{upcoming.imagePath}" heading={upcoming.title} tags={upcoming.tags} date={upcoming.date} link={upcoming.link}/>
+      <FrontCard href="/event/{upcoming.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{upcoming.imagePath}" heading={upcoming.title} tags={upcoming.tags} date={upcoming.date} link={upcoming.link}/>
       {/each}
     </div>
     {/if}
@@ -33,7 +33,7 @@
   </div>
   <div class="flex flex-row overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
     {#each archive as event}
-    <FrontCard href="/events/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
+    <FrontCard href="/event/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
     {/each}
   </div>
 <div class="">
