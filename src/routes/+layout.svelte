@@ -5,6 +5,7 @@
 	import Navbar from './navbar.svelte';
 </script>
 <Navbar/>
-<MainContainer/>
+<div class="max-w-6xl m-auto">
 <slot></slot>
+</div>
 <BottomNav/>

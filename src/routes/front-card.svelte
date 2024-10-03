@@ -13,7 +13,7 @@
 	export let href:string='';
 </script>
 
-<Card class="m-8 max-w-72" img={img} href={href}>
+<Card class="m-8 min-w-52 snap-normal snap-center" img={img} href={href}>
 	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{heading}</h5>
 	{#if date}
 		<Badge border>
@@ -25,8 +25,4 @@
 		{/each}
 	{/if}
 	<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{text}</p>
-	{#if link}
-		<br />
-		<Button href={link}>Learn More</Button>
-	{/if}
 </Card>
