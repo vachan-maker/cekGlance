@@ -18,7 +18,7 @@
     </div>
     <Button pill={true} class="!p-2" href="/upcoming"><ArrowRightOutline class="w-6 h-6"/></Button>
     </div>
-    <div class="flex flex-row overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
+    <div class="flex flex-row overflow-x-auto snap-x snap-mandatory max-w-xs lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
       {#each upcoming_events as upcoming}
       <FrontCard href="/event/{upcoming.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{upcoming.imagePath}" heading={upcoming.title} tags={upcoming.tags} date={upcoming.date} link={upcoming.link}/>
       {/each}

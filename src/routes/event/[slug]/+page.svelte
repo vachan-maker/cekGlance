@@ -43,6 +43,12 @@
                 <Badge large color="red">{event.venue}</Badge>
             </ListgroupItem>
             {/if}
+            {#if event.registrationFee}
+            <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
+                <P>Registration Fee:</P>
+                <P>&#8377{event.registrationFee}</P>
+            </ListgroupItem>
+            {/if}
           </Listgroup>
     </div>
 </div>
