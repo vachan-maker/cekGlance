@@ -8,9 +8,9 @@
 <div class="p-2 bg-slate-100 flex flex-col justify-center items-center lg:flex-row lg:p-16">
   <Avatar src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Logos/{organizer.logo}" rounded size="xl" />
   <div class="flex flex-col mx-8">  
-  <Heading tag="h1" class="my-2">{organizer.name}</Heading>
+  <Heading tag="h1" class="my-2 text-center">{organizer.name}</Heading>
     {#if organizer.description}
-    <P>{organizer.description}</P>
+    <P class="text-center">{organizer.description}</P>
     {/if}
   </div>
   </div>
