@@ -3,7 +3,7 @@
     import { page } from '$app/stores';
     $: activeUrl = $page.url.pathname;
   </script>
-  <Navbar>
+  <Navbar class="max-w-6xl m-auto">
     <NavBrand href="/">
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">CEK Glance</span>
     </NavBrand>

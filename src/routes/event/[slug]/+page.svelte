@@ -4,7 +4,7 @@
     export let data;
     const event= data.event[0];
 </script>
-<div class="container bg-slate-200">
+<div class="container">
     <div class="flex flex-col items-center gap-2 p-8 lg:flex-row lg:items-start">
     <div class="flex m-7">
         <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md"/>
