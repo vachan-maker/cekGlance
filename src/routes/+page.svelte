@@ -1,5 +1,5 @@
 <script>
-  import { Heading, A,P,Button} from 'flowbite-svelte';
+  import { Heading, A,P,Button,Span} from 'flowbite-svelte';
    import { ThumbsUpSolid, ArrowRightOutline } from 'flowbite-svelte-icons'
 	import FrontCard from './front-card.svelte';
   export let data;
@@ -9,7 +9,7 @@
   </script>
   
   <div class="p-10 min-h-64 bg-slate-100 flex flex-col justify-center items-center">
-    <Heading tag="h1" class="text-center">Stay in the Loop with CEK Glance!</Heading>
+    <Heading tag="h1" class="text-center">Stay in the Loop with <Span gradient>CEK Glance!</Span></Heading>
   </div>
       {#if upcoming_events.length != 0}
   <div class="pt-6 flex justify-center items-center">
@@ -33,7 +33,7 @@
   </div>
   <div class="flex flex-row overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
     {#each archive as event}
-    <FrontCard href="/event/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date} link={event.link}/>
+    <FrontCard href="/event/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date}/>
     {/each}
   </div>
 <div class="">

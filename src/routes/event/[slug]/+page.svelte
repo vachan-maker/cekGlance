@@ -5,7 +5,7 @@
     const event= data.event[0];
 </script>
 <div class="container">
-    <div class="flex flex-col items-center gap-2 p-8 lg:flex-row lg:items-start">
+    <div class="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
     <div class="flex m-7">
         <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md"/>
     </div>
@@ -17,7 +17,7 @@
         {/if}
         <Listgroup class="max-w-lg">
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
-                <P>Organised By:</P>
+                <P class="font-semibold">Organised By:</P>
                 <div>
                     {#each event.tags as tag}
                     <Badge large href="/organizers/{tag}">{tag}</Badge>
@@ -25,12 +25,12 @@
                 </div>
             </ListgroupItem>
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
-                <P>Date:</P>
+                <P class="font-semibold">Date:</P>
                 <P>{event.date}</P>
             </ListgroupItem>
             {#if event.mode}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
-                <P>Mode:</P>
+                <P class="font-semibold">Mode:</P>
                 <Badge large color="pink" id="{event.mode}">{event.mode}</Badge>
                 {#if event.mode == 'Hybrid'}
                 <Tooltip triggeredBy="#Hybrid">Event is held both online and on campus</Tooltip>
@@ -39,13 +39,13 @@
             {/if}
             {#if event.venue}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
-                <P>Venue:</P>
+                <P class="font-semibold">Venue:</P>
                 <Badge large color="red">{event.venue}</Badge>
             </ListgroupItem>
             {/if}
             {#if event.registrationFee}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
-                <P>Registration Fee:</P>
+                <P class="font-semibold">Registration Fee:</P>
                 <P>&#8377{event.registrationFee}</P>
             </ListgroupItem>
             {/if}
