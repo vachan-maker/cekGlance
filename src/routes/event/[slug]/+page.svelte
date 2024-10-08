@@ -1,8 +1,10 @@
 <script>
+    import { FastAverageColor } from 'fast-average-color';
 	import { Heading, Listgroup, ListgroupItem, P, Badge, Tooltip, Button } from 'flowbite-svelte';
 	import { ArrowUpRightFromSquareSolid } from 'flowbite-svelte-icons';
 	export let data;
 	const event = data.event[0];
+    const imgURL = `https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/${event.imagePath}`
 </script>
 
 <div class="container">

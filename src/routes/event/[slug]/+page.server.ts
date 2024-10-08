@@ -1,4 +1,3 @@
-
 import { supabase } from "$lib/supabaseClient";
 export async function load({params}) {
     const {slug} = params;
