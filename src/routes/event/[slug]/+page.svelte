@@ -10,7 +10,7 @@
 </script>
 <div class="container">
 		<div
-			class="backdropTest container bg-cover bg-left-top"
+			class="backdropTest container bg-cover bg-center"
 			style="
     background-image: 
     linear-gradient(
