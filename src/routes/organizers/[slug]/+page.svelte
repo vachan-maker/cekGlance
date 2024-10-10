@@ -20,7 +20,7 @@
   </div>
   </div>
     <p></p>
-    <div class="flex flex-col items-center justify-center flex-wrap lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6 mb-20">
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 auto-rows-auto grid-flow-row-dense py-6 mb-20">
       {#each events as event}
       <FrontCard href="/event/{event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" heading={event.title} tags={event.tags} date={event.date}/>
       {/each}
