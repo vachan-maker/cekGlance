@@ -1,5 +1,5 @@
 <script>
-	import { Heading } from 'flowbite-svelte';
+	import { Heading,P } from 'flowbite-svelte';
 
 	import { Tabs, TabItem } from 'flowbite-svelte';
 	import Card from '../card.svelte';
@@ -12,6 +12,11 @@
     <Heading tag="h1" class="text-center">Upcoming Events</Heading>
   </div>
 		<div class="flex flex-col gap-9 space-y-4">
+			{#if new_events.length == 0}
+				<div class="flex flex-col justify-center items-center h-80">
+				<P size="xl" italic>There are no upcoming events.</P>
+			</div>
+			{:else}
 			{#each new_events as event}
 			<div class="flex flex-row overflow-x-auto snap-x snap-mandatory max-w-xs lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
 				{#each new_events as new_event}
@@ -19,4 +24,5 @@
 				{/each}
 			  </div>
 			{/each}
+			{/if}
 		</div>
