@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@supabase/supabase-js": "^2.45.4",
-		"fast-average-color": "^9.4.0"
+		"fast-average-color": "^9.4.0",
+		"moment": "^2.30.1"
 	}
 }

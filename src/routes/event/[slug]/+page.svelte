@@ -4,8 +4,8 @@
     export let data;
     const event= data.event[0];
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    let eventDate = new Date();
-    eventDate = event.date.toLocaleDateString('en-US', options);
+    let dateObject = new Date(event.date);
+    let eventDate = dateObject.toDateString(); 
 </script>
 <div class="container">
     <div class="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
