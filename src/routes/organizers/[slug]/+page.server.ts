@@ -6,7 +6,7 @@ export async function load({params}) {
     const {slug} = params;
     console.log({slug});
     const { data } = await supabase.from("Organizers").select('*').ilike('slug', slug);
-    const events =  (await supabase.from("Upcoming Events").select('*').contains('tags', [slug]).order('date',{ascending:true})).data;
+    const events =  (await supabase.from("Upcoming Events").select('*').contains('tags', [slug]).order('date',{ascending:false})).data;
     console.log({data});
     console.log(events);
     return {

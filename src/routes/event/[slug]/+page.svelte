@@ -3,6 +3,8 @@
     import { ArrowUpRightFromSquareSolid } from "flowbite-svelte-icons";
     export let data;
     const event= data.event[0];
+    let dateObject = new Date(event.date);
+    let eventDate = dateObject.toDateString();
 </script>
 
 <div class="container">
@@ -21,13 +23,13 @@
                 <P class="font-semibold">Organised By:</P>
                 <div>
                     {#each event.tags as tag}
-                    <Badge large href="/organizers/{tag}">{tag}</Badge>
+                    <Badge rounded color = "indigo" class="m-1" href="/organizers/{tag}">{tag.toUpperCase()}</Badge>
                     {/each}
                 </div>
             </ListgroupItem>
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
                 <P class="font-semibold">Date:</P>
-                <P>{event.date}</P>
+                <P>{eventDate}</P>
             </ListgroupItem>
             {#if event.mode}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">

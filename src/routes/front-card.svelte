@@ -21,7 +21,7 @@
 	<div class="flex flex-row flex-wrap">
 	{#if tags}
 		{#each tags as tag}
-			<Badge rounded color = "indigo" class="m-1" href="/organizer/{tag}">{tag.toUpperCase()}</Badge>
+			<Badge rounded color = "indigo" class="m-1" href="/organizers/{tag}">{tag.toUpperCase()}</Badge>
 		{/each}
 	{/if}
 	</div>
