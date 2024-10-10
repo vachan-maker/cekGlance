@@ -3,6 +3,9 @@
     import { ArrowUpRightFromSquareSolid } from "flowbite-svelte-icons";
     export let data;
     const event= data.event[0];
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let eventDate = new Date();
+    eventDate = event.date.toLocaleDateString('en-US', options);
 </script>
 <div class="container">
     <div class="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
@@ -26,7 +29,7 @@
             </ListgroupItem>
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
                 <P class="font-semibold">Date:</P>
-                <P>{event.date}</P>
+                <P>{eventDate}</P>
             </ListgroupItem>
             {#if event.mode}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
