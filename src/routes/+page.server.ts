@@ -1,3 +1,4 @@
+export const ssr = false;
 import { supabase } from "$lib/supabaseClient";
 let today:string = new Date().toISOString().slice(0,10);
 console.log(today);

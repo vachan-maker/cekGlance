@@ -3,14 +3,12 @@
     import { ArrowUpRightFromSquareSolid } from "flowbite-svelte-icons";
     export let data;
     const event= data.event[0];
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    let dateObject = new Date(event.date);
-    let eventDate = dateObject.toDateString(); 
 </script>
+
 <div class="container">
     <div class="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
     <div class="flex m-7">
-        <a href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}"><img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md hover:animate-pulse"/></a>
+        <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md"/>
     </div>
     <div class="flex flex-col flex-1 mt-8 justify-center">
         <Heading tag="h1" class="mb-6">{event.title}</Heading>
@@ -18,8 +16,7 @@
         {#if event.link}
         <Button size="lg" class="max-w-32 my-5" href="{event.link}"><ArrowUpRightFromSquareSolid class="w-5 h-5 me-2" />Register</Button>
         {/if}
-        <div class="flex flex-row items-center justify-center max-w-xl">
-        <Listgroup class='w-full'>
+        <Listgroup class="max-w-lg">
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
                 <P class="font-semibold">Organised By:</P>
                 <div>
@@ -30,7 +27,7 @@
             </ListgroupItem>
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
                 <P class="font-semibold">Date:</P>
-                <P>{eventDate}</P>
+                <P>{event.date}</P>
             </ListgroupItem>
             {#if event.mode}
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
@@ -54,7 +51,6 @@
             </ListgroupItem>
             {/if}
           </Listgroup>
-          </div>
     </div>
 </div>
 </div>
