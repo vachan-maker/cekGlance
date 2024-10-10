@@ -18,7 +18,8 @@
         {#if event.link}
         <Button size="lg" class="max-w-32 my-5" href="{event.link}"><ArrowUpRightFromSquareSolid class="w-5 h-5 me-2" />Register</Button>
         {/if}
-        <Listgroup class="max-w-lg">
+        <div class="flex flex-row items-center justify-center max-w-xl">
+        <Listgroup class='w-full'>
             <ListgroupItem class="text-base font-semibold gap-2 flex flex-row justify-between">
                 <P class="font-semibold">Organised By:</P>
                 <div>
@@ -53,6 +54,7 @@
             </ListgroupItem>
             {/if}
           </Listgroup>
+          </div>
     </div>
 </div>
 </div>

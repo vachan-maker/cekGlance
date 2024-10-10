@@ -8,7 +8,7 @@
 <div class="p-10 min-h-64 bg-slate-100 flex flex-col justify-center items-center">
     <Heading tag="h1" class="text-center">Organizations</Heading>
   </div>
-<div class="flex flex-row flex-wrap justify-center items-center gap-10 align-baseline mt-8 lg:grid lg:grid-cols-3">
+<div class="flex flex-row flex-wrap justify-center items-center gap-10 align-baseline mt-8 lg:grid lg:grid-cols-3 mb-20">
 	{#each organizers as org}
 		<div class="flex flex-col justify-center items-center gap-5">
 			<Avatar
