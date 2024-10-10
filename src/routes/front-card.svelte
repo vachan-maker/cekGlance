@@ -16,7 +16,7 @@
 	<Heading tag="h5" align="left">{heading}</Heading>
 	{#if date}
 		<Badge border>
-			<ClockSolid class="me-1.5 h-2.5 w-2.5 text-primary-800 dark:text-primary-400" />{date}</Badge>
+			<ClockSolid class="me-1.5 h-2.5 w-2.5 text-primary-800 dark:text-primary-400" />{new Date(date).toLocaleDateString()}</Badge>
 	{/if}
 	<div class="flex flex-row flex-wrap">
 	{#if tags}
