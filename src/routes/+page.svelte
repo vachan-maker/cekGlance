@@ -29,7 +29,7 @@
   <Heading tag="h3">From the Archive</Heading>
   <P>Events hosted in the past</P>
   </div>
-  <Button pill={true} class="!p-2" href="/archive"><ArrowRightOutline class="w-6 h-6"/></Button>
+  <Button pill={true} class="!p-2 hover:animate-bounce" href="/archive"><ArrowRightOutline class="w-6 h-6"/></Button>
   </div>
   <div class="flex flex-row overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
     {#each archive as event}

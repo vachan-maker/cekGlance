@@ -10,7 +10,7 @@
 <div class="container">
     <div class="flex flex-col items-center gap-2 lg:flex-row lg:items-start">
     <div class="flex m-7">
-        <img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md"/>
+        <a href="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}"><img src="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{event.imagePath}" alt="" class="w-96 aspect-square shadow-xl rounded-md hover:animate-pulse"/></a>
     </div>
     <div class="flex flex-col flex-1 mt-8 justify-center">
         <Heading tag="h1" class="mb-6">{event.title}</Heading>
