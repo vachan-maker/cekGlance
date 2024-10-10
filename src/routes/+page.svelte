@@ -4,7 +4,6 @@
 	import FrontCard from './front-card.svelte';
   export let data;
   const archive= data.archive;
-  const past_events = data.past_events;
   const upcoming_events = data.upcoming_events;
   </script>
   
@@ -40,10 +39,6 @@
   <Heading tag="h2"><A href="/past-events">Past Events</A></Heading>
 </div>
 <p></p>
-<div class="flex flex-row overflow-x-auto">
-  {#each past_events as past_event}
-  <FrontCard img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/{past_event.imagePath}" heading={past_event.title} tags={past_event.tags} text={past_event.description}/>
-  {/each}
-</div> 
+
   
   
