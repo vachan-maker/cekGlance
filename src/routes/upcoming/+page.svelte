@@ -17,12 +17,10 @@
 				<P size="xl" italic>There are no upcoming events.</P>
 			</div>
 			{:else}
-			{#each new_events as event}
-			<div class="flex flex-row overflow-x-auto snap-x snap-mandatory max-w-xs lg:grid lg:grid-cols-4 gap-8 lg:auto-rows-auto lg:grid-flow-row-dense py-6">
+			<div class="grid grid-cols-2 lg:grid-cols-5 gap-8 auto-rows-auto grid-flow-row-dense py-6">
 				{#each new_events as new_event}
 				<FrontCard href="/event/{new_event.identifier}" img="https://xnpuqvymwwzjiwycsabx.supabase.co/storage/v1/object/public/cekStorage/Upcoming/{new_event.imagePath}" heading={new_event.title} tags={new_event.tags} date={new_event.date}/>
 				{/each}
 			  </div>
-			{/each}
 			{/if}
 		</div>
